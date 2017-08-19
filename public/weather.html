@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Earthquake Visualizer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/leaflet.css">
+  <script src="dist/leaflet.js"></script>
+  <script src="dist/rx.all.js"></script>
+  <script src="dist/RxDOM/rx.dom.js"></script>
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+    var API_URL = 'http://eathquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojsonp';
+    var map = L.map('map').setView([53.505, 27.61], 9);
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+  </script>
+
+  <script src="src/weather.js"></script>
+</body>
+</html>
