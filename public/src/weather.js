@@ -26,3 +26,7 @@ var quakes = Rx.DOM.jsonpRequest({
 // 1.4 - Display it as circle marker on the map (L.circle([lat, lng], size).addTo(map))
 
 
+// 1.5 - Update data in a real-time
+
+
+// 1.6 - Update only distinct earthquakes
